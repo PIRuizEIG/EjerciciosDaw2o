@@ -1,0 +1,10 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 30px;
+}
+
+#salida {
+    padding: 15px;
+    background-color: #f3f3f3;
+    border-left: 5px solid #f15b78;
+}

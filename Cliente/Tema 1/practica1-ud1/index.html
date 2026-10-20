@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UD1 - Práctica 1 - Pablo IR</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
+</head>
+
+<body>
+    <h1 id="titulo">Arquitectura Cliente-Servidor</h1>
+    <div class="contenedor">
+        <h2>¿Qué es la Arquitectura Cliente-Servidor?</h2>
+        <p>La Arquitectura cliente servidor es un modelo de diseño de Software donde las funciones de la aplicación se
+            dividen entre dos partes. Uno o varios <b>Clientes</b> que conectan a un mismo servidor para lanzar
+            peticiones y un <b>Servidor</b> central que recibe dichas peticiones, las procesa y devuelve un resultado.
+        </p>
+        <p>Separar de esta forma la lógica del cliente y el Servidor permite el procesamiento de múltiples peticiones
+            desde un único equipo, reduciendo los requisitos necesarios en el cliente para lanzar las peticiones,
+            aumentando la seguridad de los datos y evita el riesgo de dispersión de los mismos.</p>
+    </div>
+    <div class="contenedor">
+        <h2>Funcionamiento del Modelo</h2>
+        <p class="esquema">Cliente → Petición (HTTP Request) → Servidor (Procesado) → Respuesta (HTTP Response) → Cliente</p>
+    </div>
+    <div class="contenedor">
+        <h2>Distribución de Tareas</h2>
+        <h3>Lado del Cliente (Frontend)</h3>
+        <ul>
+            <li>Interfaz de usuario.</li>
+            <li>Validación básica de formularios.</li>
+            <li>Dinamismo con JavaScript.</li>
+        </ul>
+        <h3>Lado del Servidor (Backend)</h3>
+        <ul>
+            <li>Procesamiento de lógica pesada.</li>
+            <li>Acceso, consulta y gestión de Bases de Datos.</li>
+            <li>Autenticación de usuarios y seguridad.</li>
+        </ul>
+    </div>
+    <div class="contenedor">
+        <h2>Ventajas y limitaciones de JavaScript en cliente</h2>
+        <h3>Ventajas:</h3>
+        <ul>
+            <li>El uso de Javascript en una página permite crear sitios interactivos lo que puede mejorar la experiencia
+                del usuario al navegar.</li>
+            <li>Permite realizar acciones desde el lado del cliente dando una respuesta rápida sin necesidad de recargar
+                la página.</li>
+            <li>Es un lenguaje de programación relativamente fácil de usar.</li>
+            <li>Es compatible con la mayor parte de los navegadores actuales.</li>
+        </ul>
+        <h3>Limitaciones</h3>
+        <ul>
+            <li>Es menos seguro que ejecutar la lógica en el servidor, ya que el código fuente queda expuesto en el
+                navegador.</li>
+            <li>Puede ralentizar el Navegador si el uso es muy pesado.</li>
+            <li>Puede generar problemas de compatibilidad.</li>
+            <li>Un sitio dinámico puede tener problemas de indexados para los
+                bots de los buscadores.</li>
+        </ul>
+    </div>
+    <div class="contenedor">
+        <h2>Información del Navegador:</h2>
+        <button id="detectar">
+            Detectar
+        </button>
+        <ul id="salida"></ul>
+    </div>
+</body>
+
+</html>
