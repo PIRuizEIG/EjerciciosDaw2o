@@ -96,7 +96,7 @@ function analyzeText() {
 		fieldLowercase.textContent = clean.toLowerCase();
 		fieldFirst.textContent = clean.charAt(0);
 		fieldLast.textContent = clean.charAt(length - 1);
-		console.log("Texto analizado.");
+		console.log("Texto analizado:", clean, "| Longitud:", length);
 	}
 }
 
@@ -128,6 +128,7 @@ function generateRandom() {
 	fieldCeil.textContent = Math.ceil(num);
 	fieldFloor.textContent = Math.floor(num);
 	console.log("Número generado y analizado.")
+	console.log("Número decimal:", num, "| Entero 1-100:", integer);
 }
 
 /**
@@ -204,7 +205,7 @@ function showStoredName() {
 	if (storedName) {
 		// Si existe elemento DOM mostrar nombre
 		if (storedExit) {
-			console.log("Nombre recuperado. Mostrando");
+			console.log("Nombre recuperado:", storedName);
 			storedExit.textContent = "Bienvenido " + storedName;
 		} else {
 			handleError("Error: No se han encontrado todos los elementos necesarios en la página.");
@@ -238,7 +239,7 @@ function saveName() {
 
 	// Procesar
 	localStorage.setItem("userName", nameInput.value);
-	console.log("Nombre guardado");
+	console.log("Nombre guardado en localStorage:", nameInput.value);
 }
 
 /**
