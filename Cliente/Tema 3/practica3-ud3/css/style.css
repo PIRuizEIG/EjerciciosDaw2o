@@ -1,0 +1,113 @@
+/* Valores por defecto */
+:root {
+    --bg-main: lightsteelblue;
+    --bg-header: midnightblue;
+    --bg-footer: lightcyan;
+    --borde: midnightblue;
+    --text-principal: darkslategrey;
+    --text-secundario: grey;
+    --text-header: white;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Cuerpo */
+body {
+    background-color: var(--bg-main);
+    color: var(--text-principal);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding: 20px;
+    margin: 10px auto;
+    border: 2px solid var(--borde);
+    border-radius: 10px;
+    max-width: 750px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Cabecera de la página */
+header {
+    background-color: var(--bg-header);
+    color: var(--text-header);
+    text-align: center;
+    padding: 24px 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Pie de página */
+footer {
+    color: var(--text-secundario);
+    background-color: var(--bg-footer);
+    font-size: x-small;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 20px;
+    padding: 8px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Formato del formulario del cambio de tema */
+form {
+    padding: 15px;
+    border: 1px solid var(--borde);
+    margin: 20px auto;
+}
+
+/* Formato de etiquetas */
+label {
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* Formato de botón */
+button {
+    padding: 8px;
+    border-radius: 5px;
+    border: none;
+    background-color: var(--bg-header);
+    color: var(--text-header);
+    margin: 10px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: var(--bg-footer);
+    color: var(--text-secundario);
+}
+
+button:active {
+    background-color: var(--text-secundario);
+    color: var(--bg-footer);
+    border: 1px solid var(--borde);
+}
+
+button:focus-visible {
+    outline: 3px solid var(--bg-footer);
+    outline-offset: 3px;
+}
+
+/* Formato de la entrada de texto*/
+input[type="text"] {
+    width: 100%;
+    border-radius: 5px;
+    border: 2px solid var(--borde);
+    margin-bottom: 15px;
+    margin-top: 5px;
+    cursor: text;
+    height: 2rem;
+    padding: 0 10px;
+    background-color: var(--bg-footer);
+    color: var(--text-principal);
+}
+
+input[type="text"] :focus-visible {
+    outline: 3px solid var(--bg-footer);
+    outline-offset: 3px;
+}

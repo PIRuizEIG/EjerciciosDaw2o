@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Panel inteligente del navegador</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>Panel inteligente del navegador</h1>
+    </header>
+
+    <main>
+
+        <div>
+            <h2>Analizador de texto</h2>
+            <form>
+                <label for="txt-analyzer">Texto a analizar</label>
+                <input type="text" id="txt-analyzer" name="txt-analyzer" title="Analizador de texto">
+                <br>
+                <button type="button" id="btn-txt-analyzer">Analizar texto</button>
+            </form>
+            <div>
+                <h3>Resultados</h3>
+                <p><b>Texto limpio:</b> <span id="clean-txt">No aplicable</span></p>
+                <p><b>Longitud del texto:</b> <span id="txt-len">0</span></p>
+                <p><b>Texto en mayúsculas:</b> <span id="upper-txt">No aplicable</span></p>
+                <p><b>Texto en minúsculas:</b> <span id="lower-txt">No aplicable</span></p>
+                <p><b>Primera letra:</b> <span id="start-letter">No aplicable</span></p>
+                <p><b>Última letra:</b> <span id="end-letter">No aplicable</span></p>
+            </div>
+        </div>
+
+        <div>
+            <h2>Generador aleatorio</h2>
+            <form>
+                <button type="button" id="btn-get-rnd">Generar número</button>
+            </form>
+            <div>
+                <h3>Resultados</h3>
+                <p><b>Número generado:</b> <span id="rnd-num">No aplicable</span></p>
+                <p><b>Entero del 1 a 100:</b> <span id="rnd-int">No aplicable</span></p>
+                <p><b>Redondeado arriba:</b> <span id="rnd-ceil">No aplicable</span></p>
+                <p><b>Redondeado abajo:</b> <span id="rnd-floor">No aplicable</span></p>
+                <p><b>Es par:</b> <span id="rnd-even">No aplicable</span></p>
+                <p><b>Raíz cuadrada:</b> <span id="rnd-sqrt">No aplicable</span></p>
+            </div>
+        </div>
+
+        <div>
+            <h2>Fecha, hora y saludo</h2>
+            <p><b>Fecha:</b> <span id="date-date">No aplicable</span></p>
+            <p><b>Hora:</b> <span id="date-time">No aplicable</span></p>
+            <p><b>Día de la semana:</b> <span id="date-day">No aplicable</span></p>
+            <p><span id="date-greet">No aplicable</span></p>
+        </div>
+
+        <div>
+            <h2>Información del navegador</h2>
+            <p><b>Idioma:</b> <span id="nav-lang">No aplicable</span></p>
+            <p><b>Información básica:</b> <span id="nav-basic">No aplicable</span></p>
+            <p><b>Resolución de pantalla:</b> <span id="nav-res-scr">No aplicable</span></p>
+            <p><b>Resolución de ventana:</b> <span id="nav-res-win">No aplicable</span></p>
+            <p><b>Dirección:</b> <span id="nav-url">No aplicable</span></p>
+        </div>
+
+        <div>
+            <h2>Preferencia guardada</h2>
+            <h3 id="prefs-name"></h3>
+            <form>
+                <label for="txt-name">Nombre de usuario</label>
+                <input type="text" id="txt-name" name="txt-name" title="Nombre de usuario">
+                <br>
+                <button type="button" id="btn-save-prefs">Guardar nombre</button>
+                <button type="button" id="btn-del-prefs">Borrar nombre</button>
+            </form>
+        </div>
+
+        <div>
+            <h2>Cuenta atrás</h2>
+            <form>
+                <button type="button" id="btn-countdown">Iniciar cuenta atrás</button>
+            </form>
+            <p id="countdown-exit">0</p>
+        </div>
+    </main>
+
+    <footer>
+        <p>Desarrollo Web en Entorno Cliente · 2º DAW<br>Pablo Illescas Ruiz
+        </p>
+    </footer>
+</body>
+
+</html>
